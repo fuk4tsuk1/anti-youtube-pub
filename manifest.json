@@ -1,0 +1,23 @@
+{
+    "manifest_version": 2,
+    "name": "Embedor",
+    "version": "1.0",
+  
+    "description": "embed",
+    
+    "icons": {
+      "48": "icons/icon-48.png"
+    },
+    "browser_specific_settings": {
+      "gecko": {
+        "id": "fuk4tsuk1@proton.me"
+      }
+    },
+    "content_scripts": [
+      {
+        "matches": ["https://www.youtube.com/watch*"],
+        "js": ["embedor.js"]
+      }
+    ]
+  }
+  
